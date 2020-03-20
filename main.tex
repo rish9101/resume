@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.4, 27 July 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options.
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=11cm,marginparwidth=9cm,marginparsep=1cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{RISHI RANJAN}
+\tagline{Sophomore, Indian Institute of Technology Roorkee}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%\photo{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{rranjan@cs.iitr.ac.in}
+\phone{+91-7979880496}
+  %\mailaddress{Address, Street, 00000 County}
+  \github {https://github.com/rish9101} % I'm just making this up though.
+ %\linkedin {}
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{EDUCATION}
+
+
+
+\cvevent{}{Indian Institute of Technology, Roorkee}{July 2018 -- Present}{Uttarakhand, India}
+\begin{itemize}
+\item B.Tech in \textbf{Computer Science and Engineering}
+\item \textbf{CGPA :} 8.912/10
+
+\end{itemize}
+
+% \cvevent{}{Dasmesh Public School, Faridkot}{Apr 2010-Mar 2014}{Punjab, India}
+% \begin{itemize}
+% \item High School Education, Central Board of Secondary Education (CBSE)
+% \item \color{000000}\textbf{CGPA}: 10/10
+% \end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+%\cvsection{Intership}
+%\cvevent {}{Full Stack developer \& Designer | Ensembl, GSoC}{June 2019 -- August 2019}{}
+%\begin{itemize}
+%\item Designed and developed the project ecircdb from the scratch.
+%\item The project is the first-ever developed prototype for a circular RNA analytics dashboard.
+%item The project is integrated to an in-house catalogue of circRNAs identified from multiple species.
+%\item Tech stack includes Django, ReactJS, Pandas, PlotlyJS
+%\item Visit https://github.com/EnsemblGSOC/ecircdb-backend/wiki
+%\end{itemize}
+
+
+\cvsection{SOCIETIES \& MEMBERSHIPS}
+\cvevent {}{Team Member | InfoSecIITR, IIT Roorkee}{August 2018 -- Present}{}
+\begin{itemize}
+\item InfoSecIITR is an open group of students which promotes the culture and technical know-hows of information security in the campus.
+\item Learned about various fields of Information Security like Web Exploitation, Binary Exploitation, Cryptography, Forensics, Networking and Reverse Engineering.
+\item Participated in various worldwide CTFs like CSAW, CyBrics, HitCon etc.
+\end{itemize}
+\cvevent {}{Team Member | Information Management Group, IIT Roorkee}{January 2019 -- Present}{}
+\begin{itemize}
+\item IMG is a group of students that constantly strive to lead in the innovation, development and maintenance of advanced information technologies including computer systems, software and database systems.
+\item Learned to work along with a product cycle with a team of approximately 50 members.
+\item Worked on the architecture and backend of Omniport.
+\end{itemize}
+
+\cvsection{ACHIEVEMENTS}
+\begin{itemize}
+\item Ranked in top 0.02 percentile in JEE-Advanced 2018 with a rank of 280.
+\item Ranked in top 0.4 percentile in JEE-Mains 2018.
+\item James Thomson Scholarship awardee.
+\end{itemize}
+
+
+\cvsection{SKILLS}
+\begin{itemize}
+\item \textbf{Binary Exploitation :} Knowledge of Stack Based vulnerabilities, Heap Based Vulnerabilities, basic knowledge of kernel exploitation, Browser Exploitation(Webkit and SPidermonkey) and general binary exploitation techniques like ROP, shellcode-injection and crafting, SROP, Use after Free, TOCTTOU bugs, Race conditions etc.
+\item \textbf{Tools Used :} GDB, radare2, pwntools, Ghidra, ropper, IDA,
+\item \textbf{Computer languages :} C, C++, Python, Bash, Java, JavaScript
+\item \textbf{Web Exploitation :} Knowledge of php based exploitation, XSS, flask based exploitation. 
+\item \textbf{Tools Used :} BurpSuite, DirBuster, sqlmap, xss scanner.
+\item \textbf{Networking :} Knowledge of various networking protocols and concepts from a theoretical purposes.
+\end{document}
